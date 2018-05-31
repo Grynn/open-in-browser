@@ -1,7 +1,8 @@
 {
   "name": "open-in-browser",
   "version": "0.0.1",
-  "description": "Simple CLI tool using react-dev-tool's open in browser to open any URL in the computers default browser. If the page is already open, activate the tab instead of creating a new window.",
+  "description":
+    "Simple CLI tool using react-dev-tool's open in browser to open any URL in the computers default browser. If the page is already open, activate the tab instead of creating a new window.",
   "bin": {
     "open-in-browser": "bin/open.js"
   },
@@ -10,6 +11,7 @@
   },
   "keywords": [],
   "author": "Vishal Doshi <vishal.doshi@gmail.com>",
+  "homepage": "https://github.com/Grynn/open-in-browser",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.1",
