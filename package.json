@@ -6,7 +6,7 @@
     "open-in-browser": "bin/open.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Ain't got no tests mate\""
   },
   "keywords": [],
   "author": "Vishal Doshi <vishal.doshi@gmail.com>",
