@@ -13,14 +13,14 @@
   "homepage": "https://github.com/Grynn/open-in-browser",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^2.4.1",
+    "chalk": "^2.4.2",
     "optimist": "^0.6.1",
-    "react-dev-utils": "^5.0.1"
+    "react-dev-utils": "^5.0.3"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.0",
-    "prettier": "^1.12.1"
+    "eslint-config-prettier": "^2.10.0",
+    "eslint-plugin-prettier": "^2.7.0",
+    "prettier": "^1.16.1"
   }
 }
