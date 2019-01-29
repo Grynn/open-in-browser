@@ -12,15 +12,16 @@ if (argv["?"] || argv.h || argv.help) {
   return 0;
 }
 
-// if (!argv._.startsWith("https?://")) {
-//   argv._ = "http://";
-// }
+let arg = new String(argv._);
+if (!arg.match(/^https?:\/\//)) {
+  arg = 'http://' + arg;
+}
 
 //Valid inputs?
 try {
-  uri = new URL(argv._);
+  uri = new URL(arg);
 } catch (e) {
-  error_log(`Could not parse ${argv._} as a URL`);
+  error_log(`Could not parse ${arg} as a URL`);
   usage();
   return 1;
 }
@@ -28,10 +29,10 @@ try {
 //Let's open...
 let opened = openBrowser(uri);
 if (!opened) {
-  error_log(`Could not open: ${url}"`);
+  error_log(`Could not open: ${uri}"`);
   return 1;
 } else {
-  console.log(chalk.blue(`Launched: ${url}`));
+  console.log(chalk.blue(`Launched: ${uri}`));
 }
 
 return 0;
