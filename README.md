@@ -2,10 +2,10 @@
 
 Simple CLI tool using react-dev-tool's open in browser to open any URL in the computers default browser. If the page is already open, activate the tab instead of creating a new window.
 
-# install
+# install (optional, use with npx instead)
 
 `npm i -g open-in-browser`
 
 # usage
 
-`open-in-browser http://yahoo.com`
+`npx open-in-browser http://yahoo.com`
