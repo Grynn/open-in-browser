@@ -8,6 +8,10 @@
   "scripts": {
     "test": "echo \"Ain't got no tests mate\""
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Grynn/open-in-browser.git"
+  },
   "keywords": [],
   "author": "Vishal Doshi <vishal.doshi@gmail.com>",
   "homepage": "https://github.com/Grynn/open-in-browser",
