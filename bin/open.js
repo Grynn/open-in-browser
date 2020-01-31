@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/env node
 
 const openBrowser = require("react-dev-utils/openBrowser");
 const chalk = require("chalk");
