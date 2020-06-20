@@ -2,7 +2,7 @@
 
 const openBrowser = require("react-dev-utils/openBrowser");
 const chalk = require("chalk");
-const argv = require("optimist").argv;
+const argv = require("minimist")(process.argv.slice(2));
 
 let uri;
 
@@ -12,9 +12,9 @@ if (argv["?"] || argv.h || argv.help) {
   return 0;
 }
 
-let arg = new String(argv._);
+let arg = argv._.join();
 if (!arg.match(/^https?:\/\//)) {
-  arg = 'http://' + arg;
+  arg = "http://" + arg;
 }
 
 //Valid inputs?
@@ -44,7 +44,7 @@ function error_log(msg) {
 function usage() {
   console.log(`
 Usage: 
-  open-in-browser url
+  npx open-in-browser url
 
   url: Any valid URL, like http://yahoo.com
 `);

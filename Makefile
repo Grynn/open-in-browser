@@ -1,12 +1,15 @@
-.PHONY: start
+.PHONY: all publish lint
 
-all: node_modules
+all: node_modules lint
 	@echo "make publish to publish :)"
 	@echo "node bin/open.js someurl to test"
 
-publish: node_modules
+publish: node_modules lint
 	npx np
 
-node_modules: package-lock.json
+lint:
+	npx eslint bin
+
+node_modules: package-lock.json package.json
 	npm install
 	touch node_modules
