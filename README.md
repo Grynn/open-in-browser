@@ -12,4 +12,5 @@ Simple CLI tool using react-dev-tool's open in browser to open any URL in the co
 
 # notes
 
-This project is a wrapper around [react-dev-utils/openBrowser](https://github.com/zanettin/react-dev-utils/blob/master/openBrowser.js). If writing a node cli / app it may be more efficient to call `require("react-dev-utils/openBrowser")(url)` instead.
+This project is a wrapper around [react-dev-utils/openBrowser](https://github.com/facebook/create-react-app/blob/master/packages/react-dev-utils/openBrowser.js). If writing a node cli / app
+it may be more efficient to call `require("react-dev-utils/openBrowser")(url)` instead.
