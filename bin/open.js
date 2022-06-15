@@ -2,7 +2,7 @@
 
 const openBrowser = require("react-dev-utils/openBrowser");
 const chalk = require("chalk");
-const argv = require("minimist")(process.argv.slice(2));
+const argv = require("minimist")(process.argv.slice(2), { boolean: [ 'n', 'dry-run' ], alias: { 'n': 'dry-run' }});
 
 let uri;
 
@@ -10,6 +10,12 @@ let uri;
 if (argv["?"] || argv.h || argv.help) {
   usage();
   return 0;
+}
+
+if (argv._.length == 0) {
+  error_log("No URL specified");
+  usage();
+  return 1;
 }
 
 let arg = argv._.join();
@@ -26,13 +32,18 @@ try {
   return 1;
 }
 
+//Is dry run?
+if (argv.n) {
+  process.env.BROWSER = "none";
+}
+
 //Let's open...
 let opened = openBrowser(uri);
-if (!opened) {
-  error_log(`Could not open: ${uri}"`);
+if (!opened && !argv.n) {
+  error_log(`Could not open: "${uri}"`);
   return 1;
 } else {
-  console.log(chalk.blue(`Launched: ${uri}`));
+  console.log(chalk.blue(`${argv.n ? "Dry-run": "Launched"}: ${uri}`));
 }
 
 return 0;

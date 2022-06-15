@@ -6,26 +6,31 @@
     "open-in-browser": "bin/open.js"
   },
   "scripts": {
-    "test": "echo \"Ain't got no tests mate\""
+    "test": "bin/open.js -n example.com",
+    "start": "bin/open.js example.com"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Grynn/open-in-browser.git"
   },
-  "keywords": [],
+  "keywords": [
+    "browser",
+    "cli",
+    "util"
+  ],
   "author": "Vishal Doshi <vishal.doshi@gmail.com>",
   "homepage": "https://github.com/Grynn/open-in-browser",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^2.4.2",
+    "chalk": "^4.1.2",
     "minimist": ">=1.2.3",
-    "react-dev-utils": "^11.0.4"
+    "react-dev-utils": "^12.0.1"
   },
   "devDependencies": {
-    "eslint": "^7.3.0",
-    "eslint-config-prettier": "^2.10.0",
-    "eslint-plugin-prettier": "^2.7.0",
-    "np": "^6.2.4",
-    "prettier": "^1.19.1"
+    "eslint": "^8",
+    "eslint-config-prettier": "^8",
+    "eslint-plugin-prettier": "^4",
+    "np": "^7",
+    "prettier": "^2"
   }
 }
