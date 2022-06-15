@@ -1,6 +1,6 @@
 {
   "name": "open-in-browser",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Simple CLI tool using react-dev-tool's open in browser to open any URL in the computers default browser. If the page is already open, activate the tab instead of creating a new window.",
   "bin": {
     "open-in-browser": "bin/open.js"
