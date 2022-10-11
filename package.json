@@ -5,6 +5,9 @@
   "bin": {
     "open-in-browser": "bin/open.js"
   },
+  "files": [
+    "bin/"
+  ],
   "scripts": {
     "test": "bin/open.js -n example.com",
     "start": "bin/open.js example.com"
