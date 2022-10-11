@@ -22,9 +22,9 @@
   "homepage": "https://github.com/Grynn/open-in-browser",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^4.1.2",
-    "minimist": ">=1.2.3",
-    "react-dev-utils": "^12.0.1"
+    "chalk": "^4",
+    "minimist": "^1.2",
+    "react-dev-utils": "^12"
   },
   "devDependencies": {
     "eslint": "^8",
