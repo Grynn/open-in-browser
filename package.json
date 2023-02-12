@@ -25,7 +25,7 @@
   "homepage": "https://github.com/Grynn/open-in-browser",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^4",
+    "chalk": "^5",
     "minimist": "^1.2",
     "react-dev-utils": "^12"
   },
