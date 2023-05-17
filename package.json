@@ -21,11 +21,12 @@
     "cli",
     "util"
   ],
+  "type": "module",
   "author": "Vishal Doshi <vishal.doshi@gmail.com>",
   "homepage": "https://github.com/Grynn/open-in-browser",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5",
+    "chalk": "^5.2.0",
     "minimist": "^1.2",
     "react-dev-utils": "^12"
   },
