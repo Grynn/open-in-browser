@@ -25,6 +25,10 @@
   "author": "Vishal Doshi <vishal.doshi@gmail.com>",
   "homepage": "https://github.com/Grynn/open-in-browser",
   "license": "ISC",
+  "engineStrict": true,
+  "engines": {
+      "node": ">=16.0.0"
+  },
   "dependencies": {
     "chalk": "^5.2.0",
     "minimist": "^1.2",
