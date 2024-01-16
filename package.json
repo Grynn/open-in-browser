@@ -27,7 +27,7 @@
   "license": "ISC",
   "engineStrict": true,
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=20.0.0"
   },
   "dependencies": {
     "chalk": "^5.3",
