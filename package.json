@@ -30,15 +30,15 @@
       "node": ">=16.0.0"
   },
   "dependencies": {
-    "chalk": "^5.2.0",
+    "chalk": "^5.3",
     "minimist": "^1.2",
     "react-dev-utils": "^12"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-prettier": "^8",
-    "eslint-plugin-prettier": "^4",
-    "np": "^7",
-    "prettier": "^2"
+    "eslint-config-prettier": "^9",
+    "eslint-plugin-prettier": "^5",
+    "np": "^9",
+    "prettier": "^3"
   }
 }
