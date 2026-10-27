@@ -40,5 +40,10 @@
     "eslint-plugin-prettier": "^5",
     "np": "^9",
     "prettier": "^3"
+  },
+  "overrides": {
+    "external-editor": {
+      "tmp": "^0.2.6"
+    }
   }
 }
